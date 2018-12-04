@@ -1,0 +1,200 @@
+body{
+	font-family: 'Tahoma';
+	padding: 10px;
+}
+
+.wrapper {
+	background: lightgreen;
+	width: 940px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border: 1px solid green;
+	padding-left: 5px;
+}
+
+.Contact_Manager {
+	font-weight: bold;
+}
+
+.Action_ul {
+	margin-left: 50px;
+	font-size: 12px;
+}
+
+.Action_ul a {
+	text-decoration: initial;
+	color: black;
+}
+
+.Action_li:after {
+	content: '▼';
+	font-size: 10px;
+}
+
+.submenu {
+	position: absolute;
+	width: 57px;
+	height: 66px;
+	margin: 6px 0 0 31px;
+	text-align: center;
+	background: lightgreen;
+	visibility: hidden;
+	opacity: 0; 
+	transform-origin: 0% 0%;
+	transform: rotateX(-90deg);
+	transition: .3s linear;
+}
+
+.Action_li:hover > .submenu {
+	transform: rotateX(0deg);
+	visibility: visible;
+	opacity: 1;
+}
+
+.content {
+    display: flex; 
+
+}
+
+/*Контент (лево) - начало*/
+
+.form-field-1 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.form-field-2 {
+    display: flex;
+}
+
+#lastdiv{
+	margin-bottom: 0px;
+}
+
+#span:after {
+	content: '*';
+	color: red;
+	font-size: 10px;
+}
+
+.first_column_text {
+	padding: 15px 0px 10px 0px;
+}
+
+.form-field-1 span {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.input {
+	width: 200px;
+}
+
+#input {
+	width: 100px;
+    margin-right: 100px;
+}
+
+.last_span1 {
+    margin-left: 120px;
+}
+
+.last_span2 {
+	margin-left: 173px;
+}
+
+.last_input1 {
+	width: 135px;
+    margin-left: 39px;
+}
+
+.last_input2 {
+	width: 135px;
+    margin: 5px 0 20px 5px;
+}
+
+.last_span3 {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.last_span1, .last_span2 {
+	font-size: 12px;
+}
+/*Контент (лево) - конец*/
+
+/*Контент (право) - начало*/
+
+.second_column_text {
+	padding-top: 15px;
+    margin-left: 100px;
+    justify-content: flex-end;
+}
+
+.form-field-4 {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field-4 label {
+	font-size: 12px;
+}
+
+.span_radio {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#span_radio {
+    padding-top: 45px;		
+}
+
+.label {
+	margin: -20px 0px 0px 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#p_label {
+	margin:-12px 0px 0px 21px;
+}
+
+.form-field-5 {
+	font-weight: bold;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+
+#lastdiv_1{
+	margin-left: 200px;
+}
+
+/*Контент (право) - конец*/
+
+.main {
+	border: 1px solid lightgreen;
+	width: 940px;
+	padding-left: 5px;
+}
+
+.footer {
+	margin-left: -5px;
+    background: lightgrey;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_input {
+    height: 30px;
+    margin: 5px;
+    width: 100px;
+    background: #8bc34a;
+    border: 1px solid green;
+    color: #fff;
+}

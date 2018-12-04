@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home work 6</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<p class="Contact_Manager">Contact Manager</p>
+		<ul class="Action_ul">
+			<li class="Action_li">
+				<a href="#">More Actions</a>
+	            <ul class="submenu">
+					<li><a href="#">Action 1</a></li>
+					<li><a href="#">Action 2</a></li>
+					<li><a href="#">Action 3</a></li>
+					<li><a href="#">Action 4</a></li>
+					<li><a href="#">Action 5</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="main">
+		<form id="data" class="content">
+			<div class="first_column_text">
+				<div class="form-field-1">
+					<span id="span">First Name</span>
+					<input required="First name" class="input" type="text" name="First name" value="">
+				</div>
+				<div class="form-field-1">
+				    <span id="span">Last Name</span>
+					<input required="Last name" class="input" type="text" name="Last name" value="">
+				</div>
+				<div class="form-field-1"> 
+					<span>Address</span>
+					<textarea style="resize: none;width: 200px;" cols="25" rows="6" name="textarea" ></textarea>
+				</div>
+				<div class="form-field-1">
+					<span>City</span>
+					<input class="input" type="text" name="City" value="">
+				</div>
+				<div class="form-field-1">
+					<span>State</span>
+					<select class="input" name="select">
+		                <option value="" selected="selected">-Select-</option>
+		                <option value="">State 1</option>
+		                <option value="">State 2</option>
+		                <option value="">State 3</option>
+		                <option value="">State 4</option>
+		            </select>
+		        </div>
+				<div class="form-field-1">
+					<span>Zip</span>
+					<input class="input" type="tel" name="Zip" value="" placeholder="" pattern="[0-9]{4-9}">
+				</div>	
+				<div class="form-field-1">
+					<span>Home Phone</span>
+					<input class="input" type="tel" name="Home Phone" value="" placeholder="" pattern="[0-9]{10}">
+				</div>	
+				<div class="form-field-1">
+					<span id="span">Work Phone</span>
+					<input required="Work Phone" class="input" type="tel" name="Work Phone" value="" placeholder="" pattern="[0-9]{10}">
+				</div>	
+				<div class="form-field-1">
+					<span>Fax Number</span>
+					<input id="input" class="input" type="tel" name="Work Phone" value="" placeholder="" pattern="[0-9]">
+				</div>	
+				<div class="form-field-2">
+					<div class="form-field-3">
+					    <span class="last_span3">Website</span> 
+					    <span class="last_span1">URL</span><input class="last_input1" type="text" name="URL" value="">
+					    <br>
+					    <span class="last_span2">Link Name</span><input class="last_input2" type="text" name="Link name" value="">
+				    </div>
+				</div>
+				<div id="lastdiv" class="form-field-1">
+					<span id="span">Email address</span>
+					<input required="Email address" class="input" type="text" name="Email address" value="">
+				</div>
+		    </div>
+		    <div class="second_column_text">
+		    	<div class="form-field-4">
+		    		<span class="span_radio"> When is the best time to contact</span> 
+		    		<span class="span_radio"> you?</span>
+		    	</div>
+		    	<div class="label">
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Morning</p></label>
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Afternoon</p></label>
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Evening</p></label>
+		    	</div>
+		    	<div class="form-field-4">
+		    		<span class="span_radio" id="span_radio"> What is the way to contact</span> 
+		    		<span class="span_radio"> you?</span>
+		    	</div>
+		    	<div class="label">
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Phone</p></label>
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Email</p></label>
+		    		<label><input type="radio" name="transport" value="morning"><p id="p_label">Fax</p></label>
+		    	</div>
+		    	<div class="form-field-5"> 
+					<span>Message</span>
+					<div id="lastdiv_1">
+						<textarea style="resize: none; width:170px;" cols="25" rows="6" name="textarea" ></textarea>
+					</div>
+				</div>
+	         </div>
+	    </form>
+	    <div class="footer">
+	    <input id="footer_input" type="submit" form="data" name="submit" value="Submit">
+        <input id="footer_input" type="reset" form="data" name="reset" value="Reset">
+        </div> 
+	</div>   
+</body>
+</html>
